@@ -1,0 +1,2 @@
+For dakota to drive kepler test:
+dakota dakota_pstudy.in
