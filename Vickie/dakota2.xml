@@ -2,7 +2,7 @@
 <!DOCTYPE entity PUBLIC "-//UC Berkeley//DTD MoML 1//EN"
     "http://ptolemy.eecs.berkeley.edu/xml/dtd/MoML_1.dtd">
 <entity name="dakota2" class="ptolemy.actor.TypedCompositeActor">
-    <property name="entityId" class="org.kepler.moml.NamedObjId" value="urn:lsid:kepler-project.org/ns/:30354:248:299">
+    <property name="entityId" class="org.kepler.moml.NamedObjId" value="urn:lsid:kepler-project.org/ns/:30354:248:341">
     </property>
     <property name="class" class="ptolemy.kernel.util.StringAttribute" value="ptolemy.actor.TypedCompositeActor">
         <property name="id" class="ptolemy.kernel.util.StringAttribute" value="null">
@@ -509,17 +509,15 @@
         <property name="derivedFrom" class="org.kepler.moml.NamedObjIdReferralList" value="urn:lsid:kepler-project.org:actor:75:1">
         </property>
         <property name="" class="ptolemy.vergil.basic.DocAttribute">
+            <property name="description" class="ptolemy.kernel.util.StringAttribute" value="&lt;p&gt;The Expression actor evaluates a specified expression (e.g., an addition or multiplication operation), which may reference the values of user-specified input ports, the current time, or the actor's iteration count. The actor outputs the value of the evaluated expression. &lt;/p&gt;&#10;&#10;&lt;p&gt;Expressions are specified in the Ptolemy expression language via the expression parameter. For more information about the expression language, see http://ptolemy.eecs.berkeley.edu/papers/05/ptIIdesign1-intro/ptIIdesign1-intro.pdf. &lt;/p&gt;&#10;&#10;&lt;p&gt;By default, the expression parameter is empty, and attempting to execute the actor without first specifying an expression generates an error. Expressions can refer to the values of inputs by the port name; to the current time by the identifier &quot;time&quot;; and to the current iteration count by the identifier &quot;iteration.&quot; &lt;/p&gt;&#10;&#10;&lt;p&gt;Input ports are created by the user and correspond to variables used in the specified expression. Currently, the Expression actor does not support input multiports. The actor requires all of its inputs to be present. If inputs are not all present, then the actor will generate an error. &lt;/p&gt;&#10;&#10;&lt;p&gt;Note: the Expression actor can be used instead of many of the arithmetic actors, such as AddSubtract, MultiplyDivide, and TrigFunction. However, those actors will be usually be more efficient, and sometimes more convenient to use.&lt;/p&gt;">
+            </property>
             <property name="author" class="ptolemy.kernel.util.StringAttribute" value="Xiaojun Liu, Edward A. Lee, Steve Neuendorffer">
             </property>
             <property name="version" class="ptolemy.kernel.util.StringAttribute" value="null">
             </property>
-            <property name="since" class="ptolemy.kernel.util.StringAttribute">
-            </property>
-            <property name="description" class="ptolemy.kernel.util.StringAttribute" value="&lt;p&gt;The Expression actor evaluates a specified expression (e.g., an addition or multiplication operation), which may reference the values of user-specified input ports, the current time, or the actor's iteration count. The actor outputs the value of the evaluated expression. &lt;/p&gt;&#10;&#10;&lt;p&gt;Expressions are specified in the Ptolemy expression language via the expression parameter. For more information about the expression language, see http://ptolemy.eecs.berkeley.edu/papers/05/ptIIdesign1-intro/ptIIdesign1-intro.pdf. &lt;/p&gt;&#10;&#10;&lt;p&gt;By default, the expression parameter is empty, and attempting to execute the actor without first specifying an expression generates an error. Expressions can refer to the values of inputs by the port name; to the current time by the identifier &quot;time&quot;; and to the current iteration count by the identifier &quot;iteration.&quot; &lt;/p&gt;&#10;&#10;&lt;p&gt;Input ports are created by the user and correspond to variables used in the specified expression. Currently, the Expression actor does not support input multiports. The actor requires all of its inputs to be present. If inputs are not all present, then the actor will generate an error. &lt;/p&gt;&#10;&#10;&lt;p&gt;Note: the Expression actor can be used instead of many of the arithmetic actors, such as AddSubtract, MultiplyDivide, and TrigFunction. However, those actors will be usually be more efficient, and sometimes more convenient to use.&lt;/p&gt;">
+            <property name="expression (parameter)" class="ptolemy.data.expr.StringParameter" value="An expression to evaluate. Expressions are specified in the Ptolemy expression language. For more information about the expression language, see http://ptolemy.eecs.berkeley.edu/papers/05/ptIIdesign1-intro/ptIIdesign1-intro.pdf. By default, the parameter is empty, and attempting to execute the actor without first specifying an expression generates an error. Expressions can refer to the values of inputs by the port name; to the current time by the identifier &quot;time&quot;; and to the current iteration count by the identifier &quot;iteration.&quot;">
             </property>
             <property name="output (port)" class="ptolemy.kernel.util.StringAttribute" value="An output port that broadcasts the value of the evaluated expression. The actor automatically determines the type based on the type of the input.">
-            </property>
-            <property name="expression (parameter)" class="ptolemy.data.expr.StringParameter" value="An expression to evaluate. Expressions are specified in the Ptolemy expression language. For more information about the expression language, see http://ptolemy.eecs.berkeley.edu/papers/05/ptIIdesign1-intro/ptIIdesign1-intro.pdf. By default, the parameter is empty, and attempting to execute the actor without first specifying an expression generates an error. Expressions can refer to the values of inputs by the port name; to the current time by the identifier &quot;time&quot;; and to the current iteration count by the identifier &quot;iteration.&quot;">
             </property>
         </property>
         <port name="input" class="ptolemy.actor.TypedIOPort">
@@ -529,7 +527,7 @@
     <entity name="RunSimulation" class="ptolemy.actor.TypedCompositeActor">
         <property name="_createdBy" class="ptolemy.kernel.attributes.VersionAttribute" value="8.1.devel">
         </property>
-        <property name="entityId" class="org.kepler.moml.NamedObjId" value="urn:lsid:kepler-project.org/ns/:30354:201:265">
+        <property name="entityId" class="org.kepler.moml.NamedObjId" value="urn:lsid:kepler-project.org/ns/:30354:201:261">
         </property>
         <property name="class" class="ptolemy.kernel.util.StringAttribute" value="ptolemy.actor.TypedCompositeActor">
             <property name="id" class="ptolemy.kernel.util.StringAttribute" value="urn:lsid:kepler-project.org:class:449:1">
@@ -1022,7 +1020,7 @@
         <entity name="SSH Session" class="org.kepler.actor.ssh.SshSession">
             <property name="target" class="ptolemy.actor.parameters.PortParameter" value="&quot;[user@]host[:port]&quot;">
             </property>
-            <property name="identity" class="ptolemy.data.expr.FileParameter" value="">
+            <property name="identity" class="ptolemy.data.expr.FileParameter" value="/home/vel/.ssh/id_rsa">
             </property>
             <property name="gridcert" class="ptolemy.data.expr.FileParameter" value="">
             </property>
@@ -1049,7 +1047,7 @@
 <property name="prop:postpone" class="ptolemy.kernel.util.ConfigurableAttribute"><configure>Specify whether to postpone the connection until the first remote operation is executed. The default is false, as one of the main purposes of this actor is to request passwords and make a connection at the beginning of the workflow.  </configure></property>
 <property name="prop:target" class="ptolemy.kernel.util.ConfigurableAttribute"><configure>The machine to be used at job submission. It should be null, &quot;&quot; or &quot;local&quot; for the local machine or [user@]host to denote a remote machine accessible with SSH. If user is not provided, the local username will be used. If port is not provided, the default port 22 will be applied.  This parameter is read once at initialize. </configure></property>
 <property name="prop:portforwarding" class="ptolemy.kernel.util.ConfigurableAttribute"><configure>Specification for local and/or port forwardings. Format: &quot;-L port:host:hostport -R port:host:hostport ...&quot;. Many local and/or remote forwarding specification can be given.  </configure></property>
-</property>            <property name="entityId" class="org.kepler.moml.NamedObjId" value="urn:lsid:kepler-project.org:actor:507:1">
+</property>            <property name="entityId" class="org.kepler.moml.NamedObjId" value="urn:lsid:kepler-project.org/ns/:30354:313:2">
             </property>
             <property name="class" class="ptolemy.kernel.util.StringAttribute" value="org.kepler.actor.ssh.SshSession">
                 <property name="id" class="ptolemy.kernel.util.StringAttribute" value="urn:lsid:kepler-project.org:class:1211:1">
@@ -1062,6 +1060,8 @@
             <property name="semanticType41" class="org.kepler.sms.SemanticType" value="urn:lsid:localhost:onto:4:1#CPES">
             </property>
             <property name="_location" class="ptolemy.kernel.util.Location" value="{325.0, 305.0}">
+            </property>
+            <property name="derivedFrom" class="org.kepler.moml.NamedObjIdReferralList" value="urn:lsid:kepler-project.org:actor:507:1">
             </property>
             <port name="target" class="ptolemy.actor.parameters.ParameterPort">
                 <property name="input"/>
