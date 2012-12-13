@@ -42,7 +42,7 @@
 # -------------------
 #
 #echo "$0 running text_book in serial."
-~/kepler-2.3/kepler.sh -runwf -nogui ~/camm/Vickie/dakota.xml -File_In "$1" -File_Out "$2"
+~/kepler-2.3/kepler.sh -runwf -nogui ~/camm/Vickie/dakota2.xml -File_In "/home/vel/camm/Vickie/$1" -File_Out "/home/vel/camm/Vickie/$2"
 #
 # use sleep command if file I/O timing is a problem
 #sleep 10
