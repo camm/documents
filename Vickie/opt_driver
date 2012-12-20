@@ -42,7 +42,12 @@
 # -------------------
 #
 #echo "$0 running text_book in serial."
-/home/vel/kepler-2.3/kepler.sh -runwf -nogui /home/vel/camm/Vickie/dakota2.xml -File_In "/home/vel/camm/Vickie/$1" -File_Out "/home/vel/camm/Vickie/$2"
+#/home/vel/kepler-2.3/kepler.sh -runwf -nogui /home/vel/camm/Vickie/dakota2.xml -File_In "/home/vel/camm/Vickie/$1" -File_Out "/home/vel/camm/Vickie/$2"
+while [ ! -s $2 ]
+  do
+  sleep 1
+  printf "."
+done
 #
 # use sleep command if file I/O timing is a problem
 #sleep 10
