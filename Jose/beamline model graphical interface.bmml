@@ -1,4 +1,4 @@
-<mockup version="1.0" skin="sketch" measuredW="980" measuredH="450" mockupW="923" mockupH="422">
+<mockup version="1.0" skin="sketch" measuredW="1143" measuredH="437" mockupW="1086" mockupH="409">
   <controls>
     <control controlID="0" controlTypeID="com.balsamiq.mockups::MenuBar" x="57" y="50" w="450" h="29" measuredW="102" measuredH="29" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
@@ -20,9 +20,9 @@
         <text>Save%20%26%20Exit</text>
       </controlProperties>
     </control>
-    <control controlID="36" controlTypeID="com.balsamiq.mockups::Button" x="321" y="219" w="-1" h="-1" measuredW="99" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Button" x="321" y="219" w="-1" h="-1" measuredW="112" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>launch%20builder</text>
+        <text>build/edit%20model</text>
       </controlProperties>
     </control>
     <control controlID="37" controlTypeID="com.balsamiq.mockups::FieldSet" x="67" y="264" w="430" h="112" measuredW="200" measuredH="170" zOrder="5" locked="false" isInGroup="-1">
@@ -35,12 +35,12 @@
         <text>Pre-Built%20Models%0Aflat%20background%20+%20elastic%20line%0ABASIS%20background%20+%20elastic%20line%0Alinear%20background%20+%20Lorentzian</text>
       </controlProperties>
     </control>
-    <control controlID="39" controlTypeID="com.balsamiq.mockups::Image" x="636" y="43" w="344" h="407" measuredW="405" measuredH="518" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::Image" x="558" y="29" w="344" h="407" measuredW="405" measuredH="518" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <src>./assets/model_builder.png</src>
       </controlProperties>
     </control>
-    <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="410" y="145" w="220" h="89" measuredW="150" measuredH="100" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="422" y="145" w="143" h="89" measuredW="150" measuredH="100" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <direction>bottom</direction>
         <leftArrow>false</leftArrow>
@@ -48,12 +48,12 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="41" controlTypeID="com.balsamiq.mockups::Button" x="895" y="406" w="-1" h="-1" measuredW="58" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Button" x="826" y="406" w="-1" h="-1" measuredW="58" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Done%21</text>
       </controlProperties>
     </control>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::Arrow" x="480" y="313" w="422" h="100" measuredW="150" measuredH="100" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Arrow" x="480" y="313" w="355" h="100" measuredW="150" measuredH="100" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <direction>top</direction>
         <leftArrow>true</leftArrow>
@@ -63,7 +63,19 @@
     </control>
     <control controlID="43" controlTypeID="com.balsamiq.mockups::TextArea" x="73" y="279" w="416" h="91" measuredW="200" measuredH="140" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>LinearBackground%28A0%3D40.0%2CA1%3D3.0%2CA0%3E0%29+Convolution%28TabulatedFunction+BackTobackExponential%28I0.00%2CA%3D1.00%2CB%3D0.05%2CX0%3D0.00%2CS%3D1.0%29%29</text>
+        <text>%28NON-EDITABLE%29%0ALinearBackground%28A0%3D40.0%2CA1%3D3.0%2CA0%3E0%29+Convolution%28TabulatedFunction+BackTobackExponential%28I0.00%2CA%3D1.00%2CB%3D0.05%2CX0%3D0.00%2CS%3D1.0%29%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::TextArea" x="943" y="131" w="200" h="93" measuredW="200" measuredH="140" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>ALLOWED%20TASKS%3A%0A1.Change%20initial%20values%0A2.Add%20bounds%20to%20parameters%0A3.Add%20constraints%0A4.Fix%20parameters</text>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::Arrow" x="902" y="172" w="41" h="10" measuredW="150" measuredH="100" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>-1</curvature>
+        <rightArrow>false</rightArrow>
+        <text/>
       </controlProperties>
     </control>
   </controls>
