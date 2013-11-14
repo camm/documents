@@ -4,9 +4,16 @@
             <file>LiCl.pdb</file>
             <format>pdb</format>
           </structure>
+          <selections>
+            <selection>
+              <name>hydrogens</name>
+              <type>lexical</type>
+              <expression>hydro.*</expression>
+            </selection>
+          </selections>
           <framesets>
             <frameset>
-              <file>production.dcd</file>
+              <file>LiCl.dcd</file>
               <format>dcd</format>
 	    </frameset>
           </framesets>
@@ -47,11 +54,15 @@
               </orientation>
             </average>
             <signal>
-              <file>fqt.hd5</file>
+              <file>fqt_coh.hd5</file>
               <fqt>true</fqt>
               <fq0>true</fq0>
               <fq>true</fq>
               <fq2>true</fq2>
             </signal>
         </scattering>
+        <database>
+          <type>file</type>
+          <file>/shared/local/sassena/sassena-v1.4.1/database/db-neutron-coherent.xml</file>
+        </database>
 </root>

@@ -4,9 +4,16 @@
             <file>LiCl.pdb</file>
             <format>pdb</format>
           </structure>
+          <selections>
+            <selection>
+              <name>hydrogens</name>
+              <type>lexical</type>
+              <expression>hydro.*</expression>
+            </selection>
+          </selections>
           <framesets>
             <frameset>
-              <file>production.dcd</file>
+              <file>LiCl.dcd</file>
               <format>dcd</format>
 	    </frameset>
           </framesets>
@@ -54,4 +61,8 @@
               <fq2>true</fq2>
             </signal>
         </scattering>
+        <database>
+          <type>file</type>
+          <file>database/db-neutron-coherent.xml</file>
+        </database>
 </root>

@@ -1,0 +1,39 @@
+<root>
+        <sample>
+          <structure>
+            <file>LiCl.pdb</file>
+            <format>pdb</format>
+          </structure>
+          <framesets>
+            <frameset>
+              <file>LiCl.dcd</file>
+              <format>dcd</format>
+	    </frameset>
+          </framesets>
+        </sample>
+        <stager>
+          <target>system</target>
+        </stager>
+        <scattering>
+            <type>all</type>
+            <dsp>
+              <type>autocorrelate</type>
+              <method>fftw</method>
+            </dsp>
+            <vectors>
+	      <type>single</type>
+	        <x>1</x> <y>0</y> <z>0</z>
+            </vectors>
+            <signal>
+              <file>fqt.hd5</file>
+              <fqt>true</fqt>
+              <fq0>true</fq0>
+              <fq>true</fq>
+              <fq2>true</fq2>
+            </signal>
+        </scattering>
+        <database>
+          <type>file</type>
+          <file>database/db-neutron-coherent.xml</file>
+        </database>
+</root>
