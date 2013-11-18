@@ -63,6 +63,6 @@
         </scattering>
         <database>
           <type>file</type>
-          <file>/shared/local/sassena/sassena-v1.4.1/database/db-neutron-coherent.xml</file>
+          <file>/global/project/projectdirs/m1503/camm/local/sassena/database/db-neutron-coherent.xml</file>
         </database>
 </root>

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#PBS -A m1503
+#PBS -q premium
+#PBS -l mppwidth=24
+#PBS -l walltime=1:00:00
+#PBS -N incoherent
+#PBS -j oe
+#PBS -V
+
+
+SASSENA=/global/project/projectdirs/m1503/camm/local/bin/sassena
+
+cd $PBS_O_WORKDIR
+aprun -n 24 $SASSENA --config orientatAgv.xml > orientatAgv.out
