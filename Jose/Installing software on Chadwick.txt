@@ -1,7 +1,0 @@
-##########
-# BOOST 1.47.0
-# Issue the following commands in the boost unpacked directory:
-##########
-$> sudo ./bootstrap.sh --includedir=/shared/include/boost_1_47_0 --libdir=/shared/lib64/boost_1_47_0
-$> sudo ./b2 install
-# Module file in /shared/etc/modulefiles/boost/1.47.0
